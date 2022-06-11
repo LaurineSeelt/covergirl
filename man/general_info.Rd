@@ -20,4 +20,5 @@ library(tidyverse)
 library(dragracer)
 
 general_info("Jinkx Monsoon")
+
 }
