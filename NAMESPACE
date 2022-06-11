@@ -3,4 +3,5 @@
 export("%>%")
 export(episode_name)
 export(general_info)
+export(special_ep)
 importFrom(magrittr,"%>%")
