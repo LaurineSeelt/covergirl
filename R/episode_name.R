@@ -12,6 +12,8 @@
 #'
 #' episode_name("S09", 7)
 #'
+#' "9021-HO"
+#'
 episode_name <- function(character, numeric) {
   name <- rpdr_ep %>% filter(season == character & episode == numeric) %>%
     select(nickname) %>% unlist()

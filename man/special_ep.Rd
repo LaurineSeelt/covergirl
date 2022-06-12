@@ -23,4 +23,11 @@ library(dragracer)
 
 special_ep("S07", 9)
 
+"It's not a special episode"
+
+
+special_ep("S14", 11)
+
+"It's a special episode hunty!"
+
 }

@@ -21,4 +21,6 @@ library(dragracer)
 
 winner("S06")
 
+"The queen who won this season was Bianca Del Rio"
+
 }

@@ -10,7 +10,7 @@ general_info(character)
 \item{character}{A name of a contestant of RuPaul's Drag Race}
 }
 \value{
-A character vector
+A character vector with three arguments
 }
 \description{
 Gain some general information about contestants on RuPaul's Drag Race
@@ -20,5 +20,7 @@ library(tidyverse)
 library(dragracer)
 
 general_info("Jinkx Monsoon")
+
+"S05", "24", "Seattle, Washington"
 
 }

@@ -11,6 +11,8 @@
 #'
 #' winner("S06")
 #'
+#'"The queen who won this season was Bianca Del Rio"
+#'
 winner <- function(season) {
   if (season == "S01") {
     return("The queen who won this season was Bebe Zahara Benet")
