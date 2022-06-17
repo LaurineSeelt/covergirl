@@ -18,8 +18,48 @@ knitr::opts_chunk$set(
 library(dragracer)
 library(covergirl)
 ```
-
+<br>
+The package 'covergirl' has been created to quickly select some information from one of the three data sets that are availble in the 'dragracer' package.
+<br>
+# Function 1: general_info()
+<br>
+The function general_info() allows you to quickly see the original season, age and hometown of any queen that has competed on RuPaul's Drag Race. The input for this function is the name of the queen you're looking for, in between square brackets and with capitals.
+<br>
 ```{r}
-
+general_info("Jinkx Monsoon")
+```
+<br>
+<br>
+# Function 2: episode_name()
+<br>
+The function episode_name() allows you to quickly look up the name of any episode of RuPaul's Drag Race. 
+The input for this function is: 
+1. The season, in between square brackets and with a zero if the number is lower than ten. The S also has to be capitalized. So "S09" is right, but "s9" or even "s09" isn't.
+1. The number of the episode.
+<br>
+```{r}
+episode_name("S13", 4)
+```
+<br>
+<br>
+# Function 3: special_ep()
+<br>
+The function special_ep() will tell you if an episode was a special episode. That means that this episode didn't follow the usual set-up of a mini-challenge, a maxi-challenge, a lip-sync between the bottom two queens and the elimination of one of the bottom two queens.
+<br>
+```{r}
+special_ep("S03", 7)
+```
+<br>
+```{r}
+special_ep("S05", 12)
+```
+<br>
+<br>
+# Function 4: winner()
+<br>
+The function winner() allows you to quickly see which queen won a season. The input for this function is the number of the season, in between square brackets, with a zero if the number is lower than ten and with a capital S. So "s9" or "s09" isn't correct, but "S09" is.
+<br>
+```{r}
+winner("S11")
 ```
 
