@@ -15,7 +15,9 @@
 #' "9021-HO"
 #'
 episode_name <- function(character, numeric) {
-  name <- dragracer::rpdr_ep %>% dplyr::filter(season == character & episode == numeric) %>%
-    dplyr::select(nickname) %>% base::unlist()
+  name <- dragracer::rpdr_ep %>%
+    dplyr::filter(season == character & episode == numeric) %>%
+    dplyr::select(nickname) %>%
+    base::unlist()
   return(name)
 }

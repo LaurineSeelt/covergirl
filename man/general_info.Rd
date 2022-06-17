@@ -21,6 +21,4 @@ library(dragracer)
 
 general_info("Jinkx Monsoon")
 
-"S05", "24", "Seattle, Washington"
-
 }

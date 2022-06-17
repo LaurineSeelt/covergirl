@@ -11,10 +11,10 @@
 #'
 #' general_info("Jinkx Monsoon")
 #'
-#' "S05", "24", "Seattle, Washington"
-#'
 general_info <- function(character){
-  general <- dragracer::rpdr_contestants %>% dplyr::filter(contestant == character) %>%
-    dplyr::select(season, age, hometown) %>% base::unlist()
+  general <- dragracer::rpdr_contestants %>%
+    dplyr::filter(contestant == character) %>%
+    dplyr::select(season, age, hometown) %>%
+    base::unlist()
   return(general)
 }

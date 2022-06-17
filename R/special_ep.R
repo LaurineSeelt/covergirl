@@ -20,7 +20,8 @@
 #' "It's a special episode hunty!"
 #'
 special_ep <- function(character, numeric) {
-  special <- dragracer::rpdr_ep %>% dplyr::filter(season == character & episode == numeric) %>%
+  special <- dragracer::rpdr_ep %>%
+    dplyr::filter(season == character & episode == numeric) %>%
     dplyr::select(special)
   if (special == 1) {
     return("It's a special episode hunty!")
