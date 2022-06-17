@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
+#' library(dplyr)
 #' library(dragracer)
 #'
 #' winner("S06")

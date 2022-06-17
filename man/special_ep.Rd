@@ -18,7 +18,7 @@ A character vector
 Find out if an episode of RuPaul's Drag Race was a special episode
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 library(dragracer)
 
 special_ep("S07", 9)

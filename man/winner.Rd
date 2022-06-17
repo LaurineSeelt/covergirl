@@ -16,7 +16,7 @@ A character vector
 Find out which queen won a season
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 library(dragracer)
 
 winner("S06")

@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
+#' library(dplyr)
 #' library(dragracer)
 #'
 #' episode_name("S09", 7)
@@ -15,7 +15,7 @@
 #' "9021-HO"
 #'
 episode_name <- function(character, numeric) {
-  name <- rpdr_ep %>% filter(season == character & episode == numeric) %>%
-    select(nickname) %>% unlist()
+  name <- dragracer::rpdr_ep %>% dplyr::filter(season == character & episode == numeric) %>%
+    dplyr::select(nickname) %>% base::unlist()
   return(name)
 }

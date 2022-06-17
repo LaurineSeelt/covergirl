@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
+#' library(dplyr)
 #' library(dragracer)
 #'
 #' general_info("Jinkx Monsoon")
@@ -14,7 +14,7 @@
 #' "S05", "24", "Seattle, Washington"
 #'
 general_info <- function(character){
-  general <- rpdr_contestants %>% filter(contestant == character) %>%
-    select(season, age, hometown) %>% unlist()
+  general <- dragracer::rpdr_contestants %>% dplyr::filter(contestant == character) %>%
+    dplyr::select(season, age, hometown) %>% base::unlist()
   return(general)
 }

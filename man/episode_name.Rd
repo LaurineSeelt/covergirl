@@ -18,7 +18,7 @@ A character vector
 Find the name of an episode of RuPaul's Drag Race
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 library(dragracer)
 
 episode_name("S09", 7)

@@ -16,7 +16,7 @@ A character vector with three arguments
 Gain some general information about contestants on RuPaul's Drag Race
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 library(dragracer)
 
 general_info("Jinkx Monsoon")
