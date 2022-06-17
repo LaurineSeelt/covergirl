@@ -21,6 +21,7 @@ library(covergirl)
 <br>
 The package 'covergirl' has been created to quickly select some information from one of the three data sets that are availble in the 'dragracer' package.
 <br>
+<br>
 # Function 1: general_info()
 <br>
 The function general_info() allows you to quickly see the original season, age and hometown of any queen that has competed on RuPaul's Drag Race. The input for this function is the name of the queen you're looking for, in between square brackets and with capitals.
